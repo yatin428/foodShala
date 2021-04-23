@@ -3,17 +3,17 @@ session_start();
 
 ?>
 
-
 <html>
 
   <head>
     <title> Home | FoodShala </title>
   </head>
 
-  <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
+  <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css?v=<?php echo time(); ?>">
 
   <link rel="stylesheet" type = "text/css" href ="css/index.css?v=<?php echo time(); ?>">
-
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <body>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
