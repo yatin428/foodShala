@@ -19,7 +19,9 @@ $conn = Connect();
 $query = "SELECT username, password FROM CUSTOMER WHERE username=? AND password=? LIMIT 1";
 
 // To protect MySQL injection for Security purpose
+
 $stmt = $conn->prepare($query);
+echo strval($query);
 $stmt -> bind_param("ss", $username, $password);
 $stmt -> execute();
 $stmt -> bind_result($username, $password);
